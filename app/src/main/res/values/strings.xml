@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LoginProject</string>
+    <string name="click"><u>click here for register</u></string>
+    <string name="alredy"><u>Already have an account?</u></string>
+</resources>

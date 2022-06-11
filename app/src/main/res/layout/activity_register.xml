@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup"
+    tools:context=".Register">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Welcome to sign up page"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="139dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="380dp"
+        android:text="Show password"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/log"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="283dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/login_desihn"
+        android:drawableStart="@drawable/email_log_design"
+        android:drawablePadding="15dp"
+        android:hint="Username"
+        android:paddingStart="15dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="283dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="500dp"
+        android:background="@drawable/login_desihn"
+        android:drawableStart="@drawable/password_log_design"
+        android:drawablePadding="15dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="283dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="432dp"
+        android:background="@drawable/login_desihn"
+        android:drawableStart="@drawable/password_log_design"
+        android:drawablePadding="15dp"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/log"
+        android:layout_width="96dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="380dp"
+        android:backgroundTint="@color/white"
+        android:text="Signup"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.723"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="283dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="@string/alredy"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/log" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
